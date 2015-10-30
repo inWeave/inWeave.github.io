@@ -1,0 +1,41 @@
+.inw__btn
+  min-width 100px
+  padding 5px 20px
+  display inline-block
+  background-color $color-grey
+  border 0
+  text-align center
+  text-transform uppercase
+  line-height 20px
+  font-family $font-roboto
+  font-weight 400
+  font-size 14px
+  color $color-text
+  cursor pointer
+  border-radius 2px
+  transition all .25s
+  outline 0
+
+  &:hover
+    background-color $color-grey - #111
+
+  &--large
+    padding 15px 30px
+    min-width 150px
+    font-weight 700
+    font-size 16px
+
+  &--primary
+    background-color $color-magenta
+    color $color-text-white
+
+    &:hover
+      background-color $color-blue
+
+  &--translucent
+    background-color transparent
+    color $color-magenta
+
+    &:hover
+      background-color $color-magenta
+      color $color-text-white

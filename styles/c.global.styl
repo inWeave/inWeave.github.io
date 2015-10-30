@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700&subset=latin,latin-ext);
+
+.inw__body
+  font-family $font-roboto
+  background-color #fff
+  text-align center
+  font-size 16px
+  font-weight 300
+  line-height 26px
+  color $color-text
+
+  // box model change
+  *, *:before, *:after
+    -moz-box-sizing border-box
+    -webkit-box-sizing border-box
+    box-sizing border-box
+
+  a
+    color $color-blue
+    text-decoration underline
+    transition color .25s
+
+    &:hover
+      color $color-magenta
+
+.inw__hr
+  height 1px
+  border 0
+  clear both
+  display inline-block
+  margin 10px auto
+  border-top solid 1px $color-blue
+  width 85px

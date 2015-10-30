@@ -1,0 +1,138 @@
+$header-size = 150px
+
+.header
+  height $header-size
+  position relative
+
+.logo
+  height @width
+  line-height @width
+  position relative
+  text-align center
+  font-weight 300
+
+  &__label
+    position absolute
+    width $header-size * 2
+    height 100%
+    left 110px
+    line-height $header-size
+    font-size 40px
+    opacity 0
+    transition opacity 2s
+
+  &__icon
+    position absolute
+    display block
+    width $header-size
+    height @width
+    line-height @width
+    background-color $color-blue
+    color $color-text-white
+    font-size 30px
+    vertical-align middle
+    cursor default
+    transition background-color 2s
+
+    &:after
+      content '0'
+
+    &:hover
+      background-color $color-magenta
+
+  &__icon:hover + &__label
+    opacity 1
+
+.wrap
+  width 80%
+  max-width 1000px
+  margin 0 auto
+  clearfix()
+
+.intro
+  position relative
+  display block
+  clearfix()
+
+  &__text
+    float left
+    width 40%
+    margin 40px 10% 40px 0
+    text-align left
+
+  &__tutorial
+    position absolute
+    left 50%
+    right 0
+    bottom 0
+    height 550px
+    background url("../imgs/tutorial.png") 0 bottom / auto 100% no-repeat
+
+.future
+  padding 80px 0 0
+  gradient-horizontal($color-magenta,.2, $color-blue,.2)
+
+  &__text
+    float right
+    width 50%
+    padding 80px 100px
+    text-align left
+
+  &__image
+    float left
+    width 50%
+    height 400px
+    margin-top 50px
+    background url("../imgs/future.png") center bottom / contain no-repeat
+
+.subscribe
+  padding 80px 0
+  color $color-text-white
+  gradient-horizontal($color-magenta,.4, $color-blue,.4)
+
+  &__submit
+    position relative
+    max-width 720px
+    display block
+    margin 20px auto
+    background-color rgba(255,255,255,.2)
+    padding 10px
+    transition background-color .25s
+    clearfix()
+
+    &:hover
+      background-color rgba(255,255,255,.6)
+
+  &__input
+    background-color transparent
+    float left
+    width 85%
+    color $color-magenta
+    transition color .25s
+
+    &::-webkit-input-placeholder
+       color $color-blue
+    &:-moz-placeholder
+       color $color-blue
+    &::-moz-placeholder
+       color $color-blue
+    &:-ms-input-placeholder
+       color $color-blue
+
+  &__btn
+    background-color transparent
+    float right
+    width 14%
+    min-width 0
+    color $color-magenta
+
+.footer
+  padding 50px 0 0
+
+  &__nav
+    display block
+    margin 0 auto 30px
+
+    a
+      display inline-block
+      padding 10px

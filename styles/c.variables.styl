@@ -1,0 +1,37 @@
+$color-magenta = #ea008b
+$color-blue = #00aded
+$color-dark = #121212
+$color-grey = #eee
+$color-text = #545454
+$color-text-white = #fff
+
+$font-roboto = 'Roboto', sans-serif
+
+$font-size = 16px
+$font-size-tiny = 10px
+$font-size-small = 13px
+$font-size-large = 20px
+$font-size-huge = 24px
+
+$line-height = 24px
+$line-height-large = 28px
+
+transition-all()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -ms-transition arguments
+  -o-transition arguments
+  transition arguments
+
+clearfix()
+  &:after
+    content ''
+    clear both
+    display table
+
+gradient-horizontal(color-start, color-start-opacity, color-finish, color-finish-opacity)
+  background-color rgba(color-start, color-start-opacity)
+  background -webkit-linear-gradient(left, rgba(color-start, color-start-opacity) 0%, rgba(color-finish, color-finish-opacity) 100%)
+  background -moz-linear-gradient(left, rgba(color-start, color-start-opacity) 0%, rgba(color-finish, color-finish-opacity) 100%)
+  background -ms-linear-gradient(left, rgba(color-start, color-start-opacity) 0%, rgba(color-finish, color-finish-opacity) 100%)
+  background linear-gradient(left, rgba(color-start, color-start-opacity) 0%, rgba(color-finish, color-finish-opacity) 100%)

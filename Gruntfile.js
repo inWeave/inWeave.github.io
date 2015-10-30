@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 			},
 			stylus : {
 				files: [
-					'common/styles/*.styl'
+					'styles/*.styl'
 				],
 				tasks: ['stylus']
 			}
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 					compress: false
 				},
 				files: {
-					'common/styles/style-web.css': 'common/styles/style-web.styl'
+					'styles/style-web.css': 'styles/style-web.styl'
 				}
 			}
 		}
