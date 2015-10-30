@@ -259,6 +259,12 @@ select {
 .inw__input--large {
   padding: 13px 15px;
 }
+.inw__i {
+  text-decoration: none;
+}
+.inw__i--right {
+  margin-left: 0.5em;
+}
 .inw__margin--ver-20 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -311,9 +317,6 @@ select {
   cursor: default;
   transition: background-color 2s;
 }
-.logo__icon:after {
-  content: '0';
-}
 .logo__icon:hover {
   background-color: #ea008b;
 }
@@ -350,7 +353,7 @@ select {
   left: 50%;
   right: 0;
   bottom: 0;
-  height: 550px;
+  height: 600px;
   background: url("../imgs/tutorial.png") 0 bottom/auto 100% no-repeat;
 }
 .future {

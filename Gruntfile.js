@@ -30,6 +30,24 @@ module.exports = function(grunt) {
 					'styles/style-web.css': 'styles/style-web.styl'
 				}
 			}
+		},
+
+		// Build webfont icons
+		webfont: {
+			icons: {
+				src: 'icons/*.svg',
+				dest: 'fonts',
+				destCss: 'styles',
+				options: {
+					font: 'inweave-icons',
+					destHtml: 'demos/',
+					copy: false,
+					templateOptions: {
+						baseClass: 'inw__i',
+						classPrefix: 'inw__i--'
+					}
+				}
+			},
 		}
 
 	});
@@ -40,6 +58,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task(s).
-	grunt.registerTask('default', ['stylus']);
+	grunt.registerTask('default', ['stylus','webfont']);
 
 };
