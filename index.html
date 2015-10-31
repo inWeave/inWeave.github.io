@@ -8,6 +8,8 @@
 	<link rel="icon" href="imgs/favicon.png" type="image/png">
 	<link rel="stylesheet" type="text/css" href="styles/inweave-icons.css">
 	<link rel="stylesheet" type="text/css" href="styles/style-web.css">
+  <!-- Ext. install id -->
+	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kkphiaafmfbkggbicfnggaaikbljcafg">
 </head>
 <body class="inw__body">
 
@@ -43,9 +45,21 @@
 				<p class="inw__p inw__italic">
 					With this browser extension you will get basic information of the GitHub project in your context.
 				</p>
-				<button class="inw__btn inw__btn--primary inw__btn--large inw__margin--ver-20">
+				<button class="iw-can-install-extension iw-click-install inw__btn inw__btn--primary inw__btn--large inw__margin--ver-20">
 					Install
 				</button>
+				<p class="iw-not-supported-browser inw__p inw__italic inw__text--magenta">
+				  inweave extension is available for Chrome browser only.
+				</p>
+				<p class="iw-extension-installed inw__p inw__italic inw__text--blue">
+          inweave extension has been already installed in your browser.
+				</p>
+        <p class="iw-installation-failure inw__p inw__italic inw__text--magenta">
+          Please confirm extension installation in your browser.
+        </p>
+        <p class="iw-installation-success inw__p inw__italic inw__text--blue">
+          You have successfully installed inweave extension.
+        </p>
 			</article>
 
 		</div>
@@ -106,6 +120,8 @@
 		</p>
 
 	</footer>
+
+<script type="text/javascript" src="js/install.js"></script>
 
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

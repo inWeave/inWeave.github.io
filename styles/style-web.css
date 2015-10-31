@@ -283,6 +283,12 @@ select {
 .inw__text--white {
   color: #fff;
 }
+.inw__text--magenta {
+  color: #ea008b;
+}
+.inw__text--blue {
+  color: #00aded;
+}
 .header {
   height: 150px;
   position: relative;
