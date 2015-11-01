@@ -280,6 +280,9 @@ select {
 .inw__block {
   display: block;
 }
+.inw__hidden {
+  display: none;
+}
 .inw__text--white {
   color: #fff;
 }
