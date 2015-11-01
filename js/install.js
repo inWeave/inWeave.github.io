@@ -63,14 +63,6 @@ document.addEventListener("DOMContentLoaded", function init() {
         }
       }
     );
-    if (isIWinstalled()) {
-      modifyClass('.iw-extension-installed', dispShow);
-      modifyClasses(['.iw-can-install-extension', '.iw-not-supported-browser'], dispHide);
-    } else {
-      modifyClass('.iw-click-install', initInstallButton);
-      modifyClass('.iw-can-install-extension', dispShow);
-      modifyClasses(['.iw-extension-installed', '.iw-not-supported-browser'], dispHide);
-    }
   } else {
     // unsupported browser
     modifyClass('.iw-not-supported-browser', dispShow);
