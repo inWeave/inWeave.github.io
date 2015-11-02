@@ -297,8 +297,6 @@ select {
   position: relative;
 }
 .logo {
-  height: ;
-  line-height: ;
   position: relative;
   text-align: center;
   font-weight: 300;
@@ -307,9 +305,10 @@ select {
   position: absolute;
   width: 300px;
   height: 100%;
-  left: 110px;
+  left: 190px;
   line-height: 150px;
   font-size: 40px;
+  text-align: left;
   opacity: 0;
   transition: opacity 2s;
 }
@@ -376,7 +375,7 @@ select {
 .future__text {
   float: right;
   width: 50%;
-  padding: 80px 100px;
+  padding: 80px 10%;
   text-align: left;
 }
 .future__image {
@@ -448,4 +447,60 @@ select {
 .footer__nav a {
   display: inline-block;
   padding: 10px;
+}
+@media screen and (max-width: 900px) {
+  .wrap {
+    width: 80%;
+    max-width: none;
+  }
+  .header {
+    height: 100px;
+  }
+  .logo__label {
+    width: 200px;
+    line-height: 100px;
+    font-size: 30px;
+    left: 140px;
+  }
+  .logo__icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+  .intro__tutorial,
+  .intro__text {
+    position: relative;
+    width: 100%;
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+    left: auto;
+    right: auto;
+  }
+  .intro__tutorial {
+    height: 450px;
+  }
+  .future {
+    padding: 30px 0;
+  }
+  .future__image {
+    display: none;
+  }
+  .future__text {
+    width: auto;
+    float: none;
+    padding: 20px 0;
+  }
+  .subscribe {
+    padding: 30px 0;
+  }
+  .subscribe__input {
+    width: 70%;
+  }
+  .subscribe__btn {
+    width: auto;
+    max-width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

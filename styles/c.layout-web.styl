@@ -1,3 +1,4 @@
+$mobile = 900px
 $header-size = 150px
 
 .header
@@ -5,8 +6,6 @@ $header-size = 150px
   position relative
 
 .logo
-  height @width
-  line-height @width
   position relative
   text-align center
   font-weight 300
@@ -15,9 +14,10 @@ $header-size = 150px
     position absolute
     width $header-size * 2
     height 100%
-    left 110px
+    left $header-size + 40
     line-height $header-size
     font-size 40px
+    text-align left
     opacity 0
     transition opacity 2s
 
@@ -72,7 +72,7 @@ $header-size = 150px
   &__text
     float right
     width 50%
-    padding 80px 100px
+    padding 80px 10%
     text-align left
 
   &__image
@@ -133,3 +133,65 @@ $header-size = 150px
     a
       display inline-block
       padding 10px
+
+// mobile
+@media screen and (max-width: $mobile)
+
+  $header-size = 100px
+
+  .wrap
+    width 80%
+    max-width none
+
+  .header
+    height $header-size
+
+  .logo
+
+    &__label
+      width $header-size * 2
+      line-height $header-size
+      font-size 30px
+      left $header-size + 30
+
+    &__icon
+      width $header-size
+      height @width
+      line-height @width
+
+  .intro__tutorial,
+  .intro__text
+    position relative
+    width 100%
+    float none
+    padding-left 0
+    padding-right 0
+    left auto
+    right auto
+
+  .intro__tutorial
+    height 450px
+
+  .future
+    padding 30px 0
+
+    &__image
+      display none
+
+    &__text
+      width auto
+      float none
+      padding 20px 0
+
+  .subscribe
+    padding 30px 0
+
+    &__input
+      width 70%
+
+    &__btn
+      width auto
+      max-width 30%
+      padding-left 10px
+      padding-right 10px
+
