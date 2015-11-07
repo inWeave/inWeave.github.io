@@ -328,13 +328,11 @@ select {
 .logo__icon:hover {
   background-color: #ea008b;
 }
-.logo__icon:hover + .logo__label {
-  opacity: 1;
-}
 .wrap {
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
 }
 .wrap:after {
   content: '';
@@ -362,7 +360,7 @@ select {
   right: 0;
   bottom: 0;
   height: 600px;
-  background: url("../imgs/tutorial.png") 0 bottom/auto 100% no-repeat;
+  background: url("../imgs/tutorialanim.gif") 0 bottom/auto 100% no-repeat;
 }
 .future {
   padding: 80px 0 0;
@@ -382,7 +380,8 @@ select {
   float: left;
   width: 50%;
   height: 400px;
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
   background: url("../imgs/future.png") center bottom/contain no-repeat;
 }
 .subscribe {
@@ -460,7 +459,7 @@ select {
     width: 200px;
     line-height: 100px;
     font-size: 30px;
-    left: 140px;
+    left: 130px;
   }
   .logo__icon {
     width: 100px;

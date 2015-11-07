@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function init() {
     modifyClasses(['.iw-extension-installed', '.iw-not-supported-browser'], dispHide);
     chrome.runtime.sendMessage(IW_EXT_ID, {type: 'installed'},
       function(response) {
-        if (response.installed) {
+        if (response && response.installed) {
           modifyClass('.iw-extension-installed', dispShow);
           modifyClass('.iw-can-install-extension', dispHide);
         } else {

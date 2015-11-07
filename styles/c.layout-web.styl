@@ -38,12 +38,13 @@ $header-size = 150px
       background-color $color-magenta
 
   &__icon:hover + &__label
-    opacity 1
+    // opacity 1 // no label now
 
 .wrap
   width 80%
   max-width 1000px
   margin 0 auto
+  position relative
   clearfix()
 
 .intro
@@ -63,7 +64,7 @@ $header-size = 150px
     right 0
     bottom 0
     height 600px
-    background url("../imgs/tutorial.png") 0 bottom / auto 100% no-repeat
+    background url("../imgs/tutorialanim.gif") 0 bottom / auto 100% no-repeat
 
 .future
   padding 80px 0 0
@@ -79,7 +80,8 @@ $header-size = 150px
     float left
     width 50%
     height 400px
-    margin-top 50px
+    position absolute
+    bottom 0
     background url("../imgs/future.png") center bottom / contain no-repeat
 
 .subscribe
@@ -194,4 +196,3 @@ $header-size = 150px
       max-width 30%
       padding-left 10px
       padding-right 10px
-
